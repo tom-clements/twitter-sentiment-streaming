@@ -42,6 +42,7 @@ User\.plotly\.credentials
 ```
 as a list format.
 ### Executing
+Inside filter_names.csv specify which words are to be scraped from twitter
 ```
 python twitter_stream_server.py
 ```
