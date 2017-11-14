@@ -1,0 +1,6 @@
+zmq
+datetime
+plotly
+pandas
+twython
+vaderSentiment
