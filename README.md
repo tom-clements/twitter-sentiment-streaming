@@ -51,3 +51,24 @@ in a new command instance execute the Client
 python twitter_stream_client.py
 ```
 plotly should then open with the streaming data.
+
+### Storing Tweets in MongoDB
+
+Start MongoDB
+Add the IP path to the databse, (can use localhost for local storing) at the top of the server script.
+```python
+con = pymongo.MongoClient("mongodb://<IP>")
+```
+Then add which database and collection to use
+```python
+db = con.kubrick
+r = db.reddit
+```
+
+Inside the MyStreamer Class, add a line to store the tweets, below the code that sends the message to the socket.
+```python
+socket.send_string(msg)
+r.insert_one(data)
+```
+The tweets will be then be stored in JSON format inside MongoDB.
+
