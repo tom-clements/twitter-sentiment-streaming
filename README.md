@@ -15,7 +15,9 @@ Also needed:
 
 ### Twitter Server
 
-Choose a host to scrape live tweets. For local host use 'socket.bind('tcp://127.0.0.1:5555')'. Firewall settings may need to be altered to allow TCP inbound and outbound on this port.
+Choose a host to scrape live tweets. For local host use:
+'''socket.bind('tcp://127.0.0.1:5555')'''
+Firewall settings may need to be altered to allow TCP inbound and outbound on this port.
 Create a new twitter app at https://apps.twitter.com/.
 From there, click on (manage keys and access tokens) to get all four keys required below.
 
