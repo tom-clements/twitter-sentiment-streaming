@@ -61,8 +61,8 @@ con = pymongo.MongoClient("mongodb://<IP>")
 ```
 Then add which database and collection to use
 ```python
-db = con.kubrick
-r = db.reddit
+db = con.<db-name>
+r = db.<collection-name>
 ```
 
 Inside the MyStreamer Class, add a line to store the tweets, below the code that sends the message to the socket.
